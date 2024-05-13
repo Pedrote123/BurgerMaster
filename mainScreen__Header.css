@@ -1,0 +1,203 @@
+body{
+    background-color: rgb(255, 238, 230);
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    user-select: none;
+    margin: 0;
+}
+
+.Header{
+    margin: 0;
+    background-image: url('Burger master background.jpg');
+    height: 42rem;
+    background-position: bottom;
+    background-size: 50% 100%;
+    background-repeat: repeat;
+    overflow-y: hidden;
+}
+
+.Header__Nav{
+    display: flex;
+    height: 6rem;
+    box-sizing: content-box;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    background-image: url('Menu DecoratorDown.png');
+    background-repeat: no-repeat;
+    background-size: 100% 74px;
+    background-position-y: bottom;
+}
+.Header__Nav::before{
+    display: flex;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: calc(6rem - 34px);
+    background-color: rgb(221, 95, 132);
+    top: 0;
+    left: 0;
+}
+
+.Header__Nav > * {
+    position: relative;
+    top: -1rem;
+}
+
+.Header__Nav-Logo{
+    left: 1.4rem;
+    top: -0.7rem;
+    user-select: none;
+    background-color: rgb(255, 238, 230);
+    border-radius: 3rem;
+    padding: 1rem;
+}
+.Header__Nav-Logo:hover{
+    background-color: rgb(255, 220, 126);
+}
+
+.Header__Nav-List{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    background-color: rgb(255, 238, 230);
+    margin-top: 1rem;
+    height: fit-content;
+    border-radius: 2rem;
+    padding: 0;
+}
+
+.Header__Nav-List li{
+    z-index: 2;
+    color: black;
+    padding-right: 1rem;
+    padding: 0.7rem 1.3rem; 
+    font-size: 1.5rem;
+}
+.Header__Nav-List li:hover{
+    background-color: rgb(255, 220, 126);
+    border-radius: 2rem 0rem 0rem 2rem;
+    color: rgb(221, 95, 132);
+}
+.Header__Nav-List li:last-child:hover{
+    border-radius: 0rem 2rem 2rem 0rem;
+}
+
+.Header__Body-Logo{
+    position: absolute;
+    width: 25rem;
+}
+
+.Header__Body-Logo.one{
+    animation-name: LogoOne;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes LogoOne{
+    0%{
+        left: -20%;
+    }
+    100%{
+        left: 25%;
+    }
+}
+
+.Header__Body-Logo.two{
+    animation-name: LogoTwo;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes LogoTwo{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 45%;
+    }
+}
+
+#Header__Body-LogoBackground{
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    width: 45rem;
+    height: 25rem;
+    left: calc(50% - 22.5rem);
+    top: 20%;
+    background-color: rgb(255, 238, 230);
+    clip-path: ellipse(50% 48% at 50% 50%);
+}
+
+
+.CartDisplay{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    align-items: center;
+    position: absolute;
+    top: 11%;
+    left: 60%;
+    background-color: rgb(255, 238, 230);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.244);
+}
+
+.OrderItem{
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 5rem;
+    width: 25rem;
+}
+
+.OrderItem_Image{
+    background-color: rgb(221, 95, 132);
+}
+
+.OrderItem_title_and_price{
+    background-color: rgb(255, 220, 126);
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.BuyButton{
+    width: 20%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: rgb(221, 95, 132);
+    border-radius: 1rem;
+    text-align: center;
+    color: rgb(255, 238, 230);
+}
+.BuyButton:hover{
+    background-color: rgb(171, 45, 82);
+    color: rgb(255, 220, 126);
+}
+.BuyButton:active{
+    background-color: rgb(171, 45, 82);
+    color: rgb(255, 220, 126);
+}
+
+
+
+
+#AdviceText{
+    margin-left: 1rem;
+    color: red;
+}
+#AdviceText a{
+    color: red;
+}
+#AdviceText a:visited{
+    color: red;
+}
+
