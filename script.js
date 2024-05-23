@@ -132,7 +132,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
             e.stopPropagation();
 
             if (e.clientX < CartDisplay_LeftBorderOffset || e.clientX > CartDisplay_RightBorderOffset || e.clientY < CartDisplay_TopBorderOffset || e.clientY > CartDisplay_BottomBorderOffset){
-                console.log(CartDisplay_LeftBorderOffset < e.clientX)
                 if (CartDisplay){
                     CartDisplay.remove();
                     CartDisplay = null;
