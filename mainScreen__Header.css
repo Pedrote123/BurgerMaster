@@ -5,11 +5,13 @@ body{
     font-style: normal;
     user-select: none;
     margin: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .Header{
     margin: 0;
-    background-image: url('Burger master background.jpg');
+    background-image: url('Burgery background.jpg');
     height: 42rem;
     background-position: bottom;
     background-size: 50% 100%;
@@ -24,8 +26,7 @@ body{
     padding: 1rem 2rem;
     justify-content: space-between;
     background-image: url('Menu DecoratorDown.png');
-    background-repeat: no-repeat;
-    background-size: 100% 74px;
+    background-repeat: repeat-x;
     background-position-y: bottom;
 }
 .Header__Nav::before{
@@ -201,3 +202,64 @@ body{
     color: red;
 }
 
+
+
+@media screen and (max-width: 500px){
+    .Header{
+        background-position: bottom;
+        background-size: 100% 100%;
+    }
+
+    .Header__Nav{
+        background-clip: border-box;
+        background-repeat: repeat-x;
+        background-size: auto;
+    }
+
+    #Header__Body-LogoBackground{
+        width: 75vw;
+        height: 75vw;
+        left: 12.5vw;
+        top: 20%;
+    }
+
+    .Header__Body-Logo{
+        width: 15rem;
+    }
+    
+    .Header__Body-Logo.one{
+        animation-name: LogoOne;
+        animation-duration: 1.3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes LogoOne{
+        0%{
+            left: -55%;
+            top: 22%;
+        }
+        100%{
+            left: calc(25% - 4rem);
+            top: 22%;
+        }
+    }
+    
+    .Header__Body-Logo.two{
+        animation-name: LogoTwo;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes LogoTwo{
+        0%{
+            left: 100%;
+            top: 22%;
+        }
+        100%{
+            left: calc(50% - 4rem);
+            top: 22%;
+        }
+    }
+}

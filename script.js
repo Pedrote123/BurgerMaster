@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
     function CreateNavegationBar__Items(){
         var Header__Nav_Logo = document.createElement('img');
         Header__Nav_Logo.classList.add('Header__Nav-Logo');
-        Header__Nav_Logo.src = 'Logo Burger Master.png';
+        Header__Nav_Logo.src = 'Logo Burgery.png';
         Header__Nav.appendChild(Header__Nav_Logo);
 
-        document.querySelector('.Header__Nav-Logo').addEventListener('mouseenter', (e)=>{Header__Nav_Logo.src = 'Logo Burger Master pink.png'})
-        document.querySelector('.Header__Nav-Logo').addEventListener('mouseleave', (e)=>{Header__Nav_Logo.src = 'Logo Burger Master.png'})
+        document.querySelector('.Header__Nav-Logo').addEventListener('mouseenter', (e)=>{Header__Nav_Logo.src = 'Logo Burgery pink.png'})
+        document.querySelector('.Header__Nav-Logo').addEventListener('mouseleave', (e)=>{Header__Nav_Logo.src = 'Logo Burgery.png'})
 
 
         const CreateNavButtons = function(){
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             for (let i = 0; i < 7; i++){
                 var Category_List_Item = document.createElement('li');
                 var option_image = document.createElement('img');
-                option_image.src = `C:/Users/PEDRO/Desktop/Varios/Programacion/JavaScript/BurgerMaster/Menu/Burgers/Option${i}.png`;
+                option_image.src = `C:/Users/PEDRO/Desktop/Varios/Programacion/JavaScript/Burgery/Menu/Burgers/Option${i}.png`;
                 Category_List.appendChild(Category_List_Item);
                 Category_List_Item.appendChild(option_image);
 
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             for (let i = 0; i < 7; i++){
                 var Category_List_Item = document.createElement('li');
                 var option_image = document.createElement('img');
-                option_image.src = `C:/Users/PEDRO/Desktop/Varios/Programacion/JavaScript/BurgerMaster/Menu/Drinks/Option${i}.png`;
+                option_image.src = `C:/Users/PEDRO/Desktop/Varios/Programacion/JavaScript/Burgery/Menu/Drinks/Option${i}.png`;
                 Category_List.appendChild(Category_List_Item);
                 Category_List_Item.appendChild(option_image);
 
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             for (let i = 0; i < 7; i++){
                 var Category_List_Item = document.createElement('li');
                 var option_image = document.createElement('img');
-                option_image.src = `C:/Users/PEDRO/Desktop/Varios/Programacion/JavaScript/BurgerMaster/Menu/Breakfast/Option${i}.png`;
+                option_image.src = `C:/Users/PEDRO/Desktop/Varios/Programacion/JavaScript/Burgery/Menu/Breakfast/Option${i}.png`;
                 Category_List.appendChild(Category_List_Item);
                 Category_List_Item.appendChild(option_image);
 
