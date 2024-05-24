@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             for (let i = 0; i < 7; i++){
                 var Category_List_Item = document.createElement('li');
                 var option_image = document.createElement('img');
-                option_image.src = `C:/Users/PEDRO/Desktop/Varios/Programacion/JavaScript/Burgery/Menu/Burgers/Option${i}.png`;
+                option_image.src = `Menu/Burgers/Option${i}.png`;
                 Category_List.appendChild(Category_List_Item);
                 Category_List_Item.appendChild(option_image);
 
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             for (let i = 0; i < 7; i++){
                 var Category_List_Item = document.createElement('li');
                 var option_image = document.createElement('img');
-                option_image.src = `C:/Users/PEDRO/Desktop/Varios/Programacion/JavaScript/Burgery/Menu/Drinks/Option${i}.png`;
+                option_image.src = `Menu/Drinks/Option${i}.png`;
                 Category_List.appendChild(Category_List_Item);
                 Category_List_Item.appendChild(option_image);
 
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             for (let i = 0; i < 7; i++){
                 var Category_List_Item = document.createElement('li');
                 var option_image = document.createElement('img');
-                option_image.src = `C:/Users/PEDRO/Desktop/Varios/Programacion/JavaScript/Burgery/Menu/Breakfast/Option${i}.png`;
+                option_image.src = `Menu/Breakfast/Option${i}.png`;
                 Category_List.appendChild(Category_List_Item);
                 Category_List_Item.appendChild(option_image);
 
